@@ -1,0 +1,189 @@
+{
+    "Cardiac Arrest":[
+        {
+            "start": 0,
+            "end": 9,
+            "text": "Dry off the skin and AED pads if wet and remove any metals or jewelry. Place AED pads on the body(as shown on the image on the pads)."
+        },
+        {
+            "start": 19,
+            "end": 33,
+            "text": "Plug in the pads and allow the AED to charge. Once everyone has cleared the area press the button to discharge"
+        },
+        {
+            "start": 33,
+            "end": 57,
+            "text": "Perform 30 compressions of CPR at 2-2.4 depth compressions and 100-120 compressions per minute. Tilt the head back and perform two recovery breaths."
+        },
+        {
+            "start": 57,
+            "end": 65,
+            "text": "Repeat CPR as necessary."
+        }
+    ],
+    "Anaphylaxis":[
+        {
+            "start": 0,
+            "end": 4,
+            "text": "Form a fist around epipen and keep fingers and thumb away from either end. Hold the epipen so the blue is pointed upwards and the orange is pointed downwards."
+        },
+        {
+            "start": 4,
+            "end": 6,
+            "text": "Pull off the blue safety release"
+        },
+        {
+            "start": 6,
+            "end": 10,
+            "text": "Place the orange end against the outer mid-thigh(midway between hip and knee joints) at a 90 degree angle."
+        },
+        {
+            "start": 10,
+            "end": 15,
+            "text": "While holding the leg still push down hard until a click is heard or felt and hold firmly in place for 3 seconds."
+        },
+        {
+            "start": 15,
+            "end": 19,
+            "text": "Remove the epipen and the orange end will extend over the needle."
+        }
+    ],
+    "Asthma": [
+        {
+            "start": 0,
+            "end": 5,
+            "text": "Shake the inhaler for 10 seconds then take off the cap"
+        },
+        {
+            "start": 5,
+            "end": 8,
+            "text": "Sit or stand up straight and breathe out all the way"
+        },
+        {
+            "start": 8,
+            "end": 15,
+            "text": "Slightly tilt your head back and put the inhaler mouthpiece into mouth above the tongue."
+        },
+        {
+            "start": 15,
+            "end": 20,
+            "text": "At the same time, press down on the inhaler and breathe in through your mouth deeply for 3-5 seconds. Make sure to keep your lips closed around the mouthpiece."
+        },
+        {
+            "start": 20,
+            "end": 26,
+            "text": "Remove the inhaler and hold your breath for 10 seconds"
+        },
+        {
+            "start": 26,
+            "end": 28,
+            "text": "Breathe out slowly through your mouth"
+        },
+        {
+            "start": 28,
+            "end": 31,
+            "text": "Wait 1 minute and repeat if taking more than one puff. Rinse your mouth with water and spit before repeating"
+        }
+    ],
+    "Seizure":[
+        {
+            "start": 0,
+            "end": 1,
+            "text": "From lying on their back, turn the patient to the left."
+        },
+        {
+            "start": 1,
+            "end": 4,
+            "text": "Bend their knee and hip, and position the top leg in front of the patient."
+        },
+        {
+            "start": 4,
+            "end": 8,
+            "text": "Place their left arm under the patient’s head. The arm should be straight."
+        },
+        {
+            "start": 8,
+            "end": 10,
+            "text": "Adjust the head and position their mouth downward."
+        }
+    ],
+    "Choking":[
+        {
+            "start": 0,
+            "end": 1,
+            "text": "Tilt the person forward and place your arms around the person."
+        },
+        {
+            "start": 1,
+            "end": 8,
+            "text": "Form fist and place into the center of their abdomen place other hand over fist."
+        },
+        {
+            "start": 8,
+            "end": 13,
+            "text": "Pull in and up 5 times in hard quick thrusts to force air out of the lungs and blow out the obstruction."
+        },
+        {
+            "start": 13,
+            "end": 15,
+            "text": "Reassess and repeat as necessary."
+        }
+    ],
+    "Deep Cut":[
+        {
+            "start": 0,
+            "end": 2,
+            "text": "Place the tourniquet 2-3 inches above the wound."
+        },
+        {
+            "start": 2,
+            "end": 6,
+            "text": "Pull the strap as tight as possible and fasten the velcro 3/4 of the way."
+        },
+        {
+            "start": 6,
+            "end": 10,
+            "text": "Tighten by turning the rod. When you can no longer tighten, place rod into clamp and secure it."
+        },
+        {
+            "start": 10,
+            "end": 15,
+            "text": "Pull rest of the strap and place velcro strap over to secure."
+        }
+    ],
+    "Burn":[
+        {
+            "start": 0,
+            "end": 4,
+            "text": "Run under cold water for 10 min."
+        },
+        {
+            "start": 4,
+            "end": 16,
+            "text": "Cover the burn with cling film to prevent infection."
+        },
+        {
+            "start": 16,
+            "end": 29,
+            "text": "Wrap with gauze and reassess."
+        }
+    ],
+    "General First Aid Care":[
+        {
+            "start": 0,
+            "end": 4,
+            "text": "Run under cold water for 10 min."
+        },
+        {
+            "start": 4,
+            "end": 16,
+            "text": "Cover the burn with cling film to prevent infection."
+        },
+        {
+            "start": 16,
+            "end": 29,
+            "text": "Wrap with gauze and reassess."
+        }
+    ]
+}
+

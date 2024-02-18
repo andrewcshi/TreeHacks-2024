@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
+import os
 from openai import OpenAI
 from medical_data import create_medical_json, create_unknown_medical_json
 
 app = Flask(__name__)
 
-# Route to display a simple message at the root
 @app.route('/')
 def home():
     return "Welcome to the GPT API Output Server!"
@@ -12,9 +12,9 @@ def home():
 ##### TRAINING ASSISTANCE #####
 
 def get_condition_info(prompt):
-    return create_medical_json(prompt, "medical_instructions.txt")
+    return create_medical_json(prompt, "medical_instructions.json", "timestamps.json")
 
-@app.route('/training_output', methods=['POST'])
+@app.route('/training', methods=['POST'])
 def get_training_output():
     data = request.get_json()
     prompt = data.get('prompt')
@@ -22,25 +22,40 @@ def get_training_output():
 
 ##### EMERGENCY ASSISTANCE #####
 
-prepend = "Identify the condition described in the following voice-to-text translation: "
-postpend = "If it matches any one of these following conditions -- Cardiac Arrest, Anaphylaxis, Asthma, "\
-                "Seizure, Choking, Deep Cut, Burn -- return just the medical condition "\
-                "and no other words. In this case, your response should be one or two words."\
-                "If the condition is "\
-                "a medical condition not listed above, return a maximum of five key words describing the medical condition "\
-                "Assume that I am not a medical professional and have no prior training. "\
-                "If the condition is not medical, simply return the two words \"Not Medical\"."
+prepend = "Identify the medical condition described in the following voice-to-text translation: "\
+            "The condition is going to describe one and only one of the following categories of medical conditions: Cardiac Arrest, "\
+            "Anaphylaxia, Asthma, Seizure, Choking, Deep Cut, Burn. Return one term, no more. Do not return me a list of possible conditions "\
+            "or any other text in your response. There will be no other possible medical conditions aside from the ones "\
+            "I listed (Cardiac Arrest, Anaphylaxia, Asthma, Seizure, Choking, Deep Cut, Burn). Do not return any other values aside from this list."\
+            "Prompt: The person won't respond when I tap their shoulders; they're just lying there unresponsive."\
+            "Response: Cardiac Arrest"\
+            "Prompt: They're breathing really fast, it looks like they're struggling with every breath."\
+            "Response: Asthma"\
+            "Prompt: They mentioned feeling really tired and weak just before this happened."\
+            "Response: Fatigue"\
+            "Prompt: They're experiencing a rapid heartbeat, saying it feels like it's racing."\
+            "Response: Hypoglycemia"\
+            "Prompt: "
+            
+postpend = "Response: "
+            
 known_conditions = ["Cardiac Arrest", "Anaphylaxis", "Asthma", "Seizure", "Choking", "Deep Cut", "Burn"]
 
-@app.route('/get_gpt_output', methods=['POST'])
+chat_history = []
+
+@app.route('/chat_history', methods=['DELETE'])
+def kamikazi():
+    global chat_history
+    chat_history = []
+    return chat_history
+
+@app.route('/assist', methods=['POST'])
 def get_gpt_output():
     if request.is_json:
-        # Extract the prompt from the incoming JSON request
         data = request.get_json()
         prompt = data.get('prompt')
         
         if prompt:
-            # Call the function and get the GPT-3 response
             gpt_response = get_gpt_response(prompt)
             return jsonify({"status": "success", "data": gpt_response}), 200
         else:
@@ -49,22 +64,40 @@ def get_gpt_output():
         return jsonify({"status": "error", "message": "Request body must be JSON"}), 400
 
 def get_gpt_response(prompt):
-    with open("api_key.txt", "r") as f:
-        api_key = f.read()
+    api_key = os.getenv('TOGETHER_API_KEY')
+    
+    client = OpenAI(
+        api_key=api_key, 
+        base_url='https://api.together.xyz'
+    )
 
-    client = OpenAI(api_key=api_key)
-
-    chat_completion = client.chat.completions.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": "Please analyze the prompt I provide."},
+    messages = []
+    if len(messages) == 0:
+        messages = chat_history + [
+            {"role": "system", "content": "Please only return one or two words in your response."},
             {"role": "user", "content": prepend + prompt + postpend}
         ]
+    else:
+        messages = chat_history + [
+            {"role": "system", "content": "Please respond to the prompt."},
+            {"role": "user", "content": prompt}
+        ]
+
+    chat_completion = client.chat.completions.create(
+        model="mistralai/Mixtral-8x7B-Instruct-v0.1",
+        messages=messages,
+        temperature=0.0,
+        stop=["Prompt", "\n", "."]
     )
+
+    chat_history.extend([
+        {"role": "user", "content": prompt},
+        {"role": "assistant", "content": chat_completion.choices[0].message.content}
+    ])
     
-    medical_condition =  chat_completion.choices[0].message.content
+    medical_condition =  chat_completion.choices[0].message.content.strip()
     if medical_condition in known_conditions:
-        return create_medical_json(medical_condition, "medical_instructions.txt")
+        return create_medical_json(medical_condition, "medical_instructions.json", "timestamps.json")
     else:
         return create_unknown_medical_json(medical_condition)
 

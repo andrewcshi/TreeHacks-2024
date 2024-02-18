@@ -26,5 +26,9 @@
     "Burn": {
         "instructions": "If someone is suffering from a mild burn, cool the burn by running it under cool water for 10 minutes. Wrap the burn in cling film to reduce chance of infection.",
         "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/burn.mp4" 
+    },
+    "General First Aid Care": {
+        "instructions": "General first aid care involves assessing the situation for safety and then providing immediate assistance to stabilize the individual's condition. This includes calling for emergency help if necessary, performing CPR if the person is not breathing, and addressing any visible injuries such as bleeding or burns with appropriate first aid techniques.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/burn.mp4"
     }
 }
