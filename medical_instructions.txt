@@ -1,0 +1,30 @@
+{
+    "Cardiac Arrest": {
+        "instructions": "If someone is not breathing or moving, call for emergency help immediately. Then, push hard and fast in the middle of their chest with the heel of your hand, aiming for 100 to 120 pushes per minute, until help arrives or the person starts to breathe or move.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/aed+cpr.mp4"
+    },
+    "Anaphylaxis": {
+        "instructions": "If someone is having a severe allergic reaction (anaphylaxis), find out if they have an epinephrine auto-injector (like an EpiPen) and help them use it immediately, then call for emergency help. Keep them calm and lying down, and don't give them anything to drink.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/epipen.mp4"
+    },
+    "Asthma": {
+        "instructions": "If someone is having an asthma attack, help them sit up straight and assist them in using their inhaler (one puff every 30 to 60 seconds, up to a maximum of 10 puffs). Call for emergency help if their breathing does not improve after using the inhaler or if they don't have their inhaler with them.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/inhaler.mp4"
+    },
+    "Seizure": {
+        "instructions": "If someone is having a seizure, make sure they are in a safe place where they can't hurt themselves; move sharp objects away and cushion their head. Do not hold them down or put anything in their mouth, and call for emergency help if the seizure lasts more than 5 minutes.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/recoveryposition.mp4"
+    },
+    "Choking": {
+        "instructions": "If an adult or child is choking and can't talk, cry, cough, or breathe, stand behind them and give 5 sharp back blows between their shoulder blades with the heel of your hand. If this doesn’t clear the blockage, perform the Heimlich maneuver by standing behind them, wrapping your arms around their waist, and giving quick, upward thrusts just above their belly button until the object is expelled.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/choking.mp4"
+    },
+    "Deep Cut": {
+        "instructions": "If someone is suffering from a deep cut, apply a tourniquet to stop the bleeding. Place tourniquet 2-3 inches above the wound. Tighten the rod until you can no longer tighten. Place the rod into the clamp and secure.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/tourniquet.mp4"
+    },
+    "Burn": {
+        "instructions": "If someone is suffering from a mild burn, cool the burn by running it under cool water for 10 minutes. Wrap the burn in cling film to reduce chance of infection.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/burn.mp4" 
+    }
+}

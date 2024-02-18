@@ -1,0 +1,111 @@
+medical_emergencies = {
+    "conditions": [
+        {
+            "Condition Name": "Cardiac arrest",
+            "Description": "A sudden and unexpected loss of heart function, breathing, and consciousness, often caused by an electrical disturbance in the heart that disrupts its normal pumping action.",
+            "Symptoms": ["Sudden loss of responsiveness", "No normal pulse", "No breathing or difficulty breathing"],
+            "Immediate Actions": "Call emergency services immediately. Start CPR (Cardiopulmonary Resuscitation) right away.",
+            "Do Not Do": "Do not hesitate to call for emergency help. Delaying medical assistance can be life-threatening.",
+            "Emergency Contacts": "Local emergency services number",
+            "Equipment Needed": "An automated external defibrillator (AED), if available",
+            "Preventive Measures": "Early detection and treatment of heart conditions, regular medical check-ups, learning CPR.",
+            "First Aid Procedures": "Initiate CPR immediately. If an AED is available, follow its instructions for use.",
+            "Important Notes": "Early defibrillation with an AED significantly increases the chances of survival. CPR should be continued until professional medical help arrives."
+        
+        },
+        {
+            "Condition Name": "Stroke",
+            "Description": "Occurs when blood supply to part of the brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients.",
+            "Symptoms": ["Sudden numbness or weakness in the face, arm, or leg", "Confusion", "Trouble speaking or understanding speech", "Loss of balance"],
+            "Immediate Actions": "Call emergency services immediately. Note the time when symptoms first appeared.",
+            "Do Not Do": "Do not give them anything to eat or drink.",
+            "Emergency Contacts": "Local emergency services number",
+            "Equipment Needed": "None",
+            "Preventive Measures": "Control high blood pressure, avoid smoking, and maintain a healthy diet.",
+            "First Aid Procedures": "Ensure the person is in a safe, comfortable position and monitor their condition.",
+            "Important Notes": "Time is critical in stroke treatment."
+        },
+        {
+            "Condition Name": "Anaphylaxis",
+            "Description": "A severe, potentially life-threatening allergic reaction that can occur within seconds or minutes of exposure to an allergen.",
+            "Symptoms": ["Difficulty breathing", "Swelling of the throat or tongue", "Hives", "Low blood pressure"],
+            "Immediate Actions": "Use an epinephrine auto-injector if available and call emergency services.",
+            "Do Not Do": "Do not wait to see if symptoms improve before acting.",
+            "Emergency Contacts": "Local emergency services number",
+            "Equipment Needed": "Epinephrine auto-injector (if prescribed)",
+            "Preventive Measures": "Avoid known allergens, carry an epinephrine auto-injector if at risk.",
+            "First Aid Procedures": "Administer epinephrine auto-injector immediately, then place the person in a lying position with legs elevated.",
+            "Important Notes": "Always call emergency services after administering epinephrine."
+        },
+        {
+            "Condition Name": "Asthma",
+            "Description": "A sudden worsening of asthma symptoms caused by the tightening of muscles around the airways.",
+            "Symptoms": ["Difficulty breathing", "Wheezing", "Coughing", "Chest tightness"],
+            "Immediate Actions": "Help the person sit upright and use their rescue inhaler or nebulizer.",
+            "Do Not Do": "Do not leave the person alone.",
+            "Emergency Contacts": "Local emergency services number",
+            "Equipment Needed": "Rescue inhaler or nebulizer",
+            "Preventive Measures": "Avoid triggers, follow asthma action plan.",
+            "First Aid Procedures": "Administer up to four puffs of a reliever inhaler.",
+            "Important Notes": "Seek immediate medical help if symptoms do not improve."
+        },
+        {
+            "Condition Name": "Hypoglycemia",
+            "Description": "A condition characterized by a dangerously low level of sugar (glucose) in the blood.",
+            "Symptoms": ["Shaking", "Sweating", "Hunger", "Irritability"],
+            "Immediate Actions": "Give the person something sweet to eat or drink if they're conscious.",
+            "Do Not Do": "Do not give anything by mouth if the person is unconscious.",
+            "Emergency Contacts": "Local emergency services number",
+            "Equipment Needed": "Glucose tablets or gel, candy, or other sugary snack",
+            "Preventive Measures": "Regular monitoring of blood sugar levels, eating regular meals.",
+            "First Aid Procedures": "If unconscious, administer glucagon injection if available and trained to do so.",
+            "Important Notes": "Always seek medical advice after a hypoglycemic episode."
+        },
+        {
+            "Condition Name": "Seizure",
+            "Description": "Uncontrolled electrical activity in the brain, which may produce a physical convulsion, minor physical signs, thought disturbances, or a combination of symptoms.",
+            "Symptoms": ["Uncontrollable jerking movements", "Loss of consciousness or awareness", "Staring spell", "Cognitive or emotional symptoms, such as fear, anxiety, or deja vu"],
+            "Immediate Actions": "Protect the person from injury, turn them onto their side to help keep the airway clear, and place something soft under their head.",
+            "Do Not Do": "Do not hold the person down or put anything in their mouth.",
+            "Emergency Contacts": "Local emergency services number",
+            "Equipment Needed": "None",
+            "Preventive Measures": "Adherence to treatment plans, avoiding known triggers.",
+            "First Aid Procedures": "Stay with the person until the seizure ends and they are fully awake. After the seizure, they may need help and reassurance.",
+            "Important Notes": "Seek medical help if the seizure lasts more than 5 minutes, the person does not wake up, or if another seizure starts."
+        },
+        {
+            "Condition Name": "Choking",
+            "Description": "A blockage of the upper airway by food or other objects, which can prevent a person from breathing effectively.",
+            "Symptoms": ["Inability to talk", "Difficulty breathing or noisy breathing", "Inability to cough forcefully", "Skin, lips, and nails turning blue or dusky", "Loss of consciousness"],
+            "Immediate Actions": "Encourage the person to cough. If they can't cough, speak, or breathe, perform back blows and abdominal thrusts if trained.",
+            "Do Not Do": "Do not try to remove the object with fingers unless it is clearly visible and easily reachable.",
+            "Emergency Contacts": "Local emergency services number",
+            "Equipment Needed": "None",
+            "Preventive Measures": "Chew food slowly and thoroughly. Avoid talking or laughing while eating.",
+            "First Aid Procedures": "If the person is conscious, perform five back blows followed by five abdominal thrusts. Repeat until the blockage is dislodged.",
+            "Important Notes": "If the person becomes unconscious, begin CPR and continue to check for and remove any visible obstructions from the mouth."
+        },
+        {"Condition Name": "Deep Cut",
+  "Description": "An injury characterized by a break in the skin that extends through multiple layers, potentially reaching muscles, tendons, or even bones.",
+  "Symptoms": ["Visible, open wound", "Bleeding that may be profuse", "Pain or tenderness around the wound"],
+  "Immediate Actions": "Apply direct pressure to the wound using a clean cloth or sterile bandage. Elevate the injured area if possible. Seek emergency medical help immediately.",
+  "Do Not Do": "Do not attempt to stitch a deep cut on your own. Avoid using dirty or non-sterile materials on the wound. Do not delay seeking professional medical assistance.",
+  "Emergency Contacts": "Local emergency services number, or go to the nearest emergency room",
+  "Equipment Needed": "Sterile bandages, clean cloth, or gauze",
+  "Preventive Measures": "Take precautions to avoid injuries, use protective gear when necessary, and practice safety in activities that pose a risk of cuts.",
+  "First Aid Procedures": "Apply direct pressure to control bleeding. Clean the wound gently with mild soap and water if possible. Cover the wound with a sterile bandage or dressing. Keep the injured area elevated if bleeding allows.",
+  "Important Notes": "Deep cuts may require stitches or other medical interventions to promote proper healing and reduce the risk of infection. Seek professional medical attention promptly for appropriate treatment."
+},
+{"Condition Name": "Burns",
+  "Description": "Injuries to the skin and underlying tissues caused by exposure to heat, chemicals, electricity, or radiation.",
+  "Symptoms": ["Red or blistered skin", "Swelling", "Pain", "Peeling or loss of skin", "Possibly charred or white skin for severe burns"],
+  "Immediate Actions": "For minor burns, cool the affected area under running water for at least 10 minutes. Cover with a clean, non-stick bandage. For severe burns, call emergency services immediately. Do not use ice or very cold water on severe burns.",
+  "Do Not Do": "Do not apply butter, oils, or ice to burns. Avoid popping blisters. For severe burns, do not remove clothing stuck to the skin.",
+  "Emergency Contacts": "Local emergency services number",
+  "Equipment Needed": "Cool, running water for minor burns; sterile bandages or dressings",
+  "Preventive Measures": "Take precautions to prevent burns, use protective gear when necessary, and exercise caution in situations involving heat or chemicals.",
+  "First Aid Procedures": "For minor burns, cool the burn under running water, cover with a clean bandage. For severe burns, call emergency services, protect the burn area from further harm, and monitor the person's breathing.",
+  "Important Notes": "Seek professional medical attention for severe burns. Minor burns may heal with proper first aid, but consult with a healthcare professional if there are concerns about infection or healing."
+}
+    ]
+}
