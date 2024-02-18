@@ -1,7 +1,7 @@
 {
     "Cardiac Arrest": {
         "instructions": "If someone is not breathing or moving, call for emergency help immediately. Then, push hard and fast in the middle of their chest with the heel of your hand, aiming for 100 to 120 pushes per minute, until help arrives or the person starts to breathe or move.",
-        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/aed+cpr.mp4"
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/cpr.mp4"
     },
     "Anaphylaxis": {
         "instructions": "If someone is having a severe allergic reaction (anaphylaxis), find out if they have an epinephrine auto-injector (like an EpiPen) and help them use it immediately, then call for emergency help. Keep them calm and lying down, and don't give them anything to drink.",
@@ -29,6 +29,10 @@
     },
     "General First Aid Care": {
         "instructions": "General first aid care involves assessing the situation for safety and then providing immediate assistance to stabilize the individual's condition. This includes calling for emergency help if necessary, performing CPR if the person is not breathing, and addressing any visible injuries such as bleeding or burns with appropriate first aid techniques.",
-        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/burn.mp4"
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/general.mp4"
+    },
+    "CPR": {
+        "instructions": "Follow the intructions to perform CPR.",
+        "video_link": "https://github.com/brandonjkim35/treehacks-2023-vid/raw/main/cpr.mp4"
     }
 }

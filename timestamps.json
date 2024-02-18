@@ -1,24 +1,44 @@
 {
     "Cardiac Arrest":[
         {
-            "start": 0,
-            "end": 9,
-            "text": "Dry off the skin and AED pads if wet and remove any metals or jewelry. Place AED pads on the body(as shown on the image on the pads)."
+            "start": 4,
+            "end": 5,
+            "text": "Check for danger."
         },
         {
-            "start": 19,
-            "end": 33,
-            "text": "Plug in the pads and allow the AED to charge. Once everyone has cleared the area press the button to discharge"
+            "start": 7,
+            "end": 14,
+            "text": "Check for responsiveness by asking questions and pinching their shoulders."
         },
         {
-            "start": 33,
-            "end": 57,
-            "text": "Perform 30 compressions of CPR at 2-2.4 depth compressions and 100-120 compressions per minute. Tilt the head back and perform two recovery breaths."
+            "start": 17,
+            "end": 19,
+            "text": "Call for help."
         },
         {
-            "start": 57,
+            "start": 26,
+            "end": 30,
+            "text": "Tilt their headlock and check their airway."
+        },
+        {
+            "start": 31,
+            "end": 43,
+            "text": "Check for normal breathing. Look for a normal gentle rise of chest and listen for breath."
+        },
+        {
+            "start": 49,
             "end": 65,
-            "text": "Repeat CPR as necessary."
+            "text": "Interlock hands, lean over, and push using the heel of your palm at a depth of ~2 inches and at a rate of 100-120 beats per minute. Allow the chest to rise back to normal position between pushes."
+        },
+        {
+            "start": 80,
+            "end": 90,
+            "text": "Tilt head back pinch nose and open up air way. Form a seal over their mouth with your mouth and give 2 rescue breaths."
+        },
+        {
+            "start": 95,
+            "end": 105,
+            "text": "Switch with another person if you get tired."
         }
     ],
     "Anaphylaxis":[
@@ -170,19 +190,29 @@
     ],
     "General First Aid Care":[
         {
-            "start": 0,
-            "end": 4,
-            "text": "Run under cold water for 10 min."
-        },
-        {
-            "start": 4,
-            "end": 16,
-            "text": "Cover the burn with cling film to prevent infection."
-        },
-        {
             "start": 16,
-            "end": 29,
-            "text": "Wrap with gauze and reassess."
+            "end": 25,
+            "text": "Check for any danger before approaching. Don’t get injured yourself."
+        },
+        {
+            "start": 25,
+            "end": 50,
+            "text": "Check for any response from the injured by asking questions. Gently shake their shoulders first if you don’t get a response, then try pinching their ears. AVPU: Alert, Voice, Pain, Unresponsive."
+        },
+        {
+            "start": 51,
+            "end": 61,
+            "text": "Check airways if person is unresponsive. Open airway by tilting head back with two fingers on the chin."
+        },
+        {
+            "start": 61,
+            "end": 72,
+            "text": "Check if breathing normally by placing ear over nose and mouth and looking down the body for 10 seconds."
+        },
+        {
+            "start": 83,
+            "end": 93,
+            "text": "Check for bleeding down the whole body."
         }
     ]
 }
